@@ -40,7 +40,7 @@ public class Controller {
     private void goSearch(ActionEvent event) {
         Stage stage = (Stage)searchButton.getScene().getWindow();
         try {
-            Parent next = FXMLLoader.load(getClass().getResource("./search/search.fxml"));
+            Parent next = FXMLLoader.load(getClass().getResource("./search/search_main.fxml"));
             Scene sc = new Scene(next);
             stage.setScene(sc);
             stage.show();

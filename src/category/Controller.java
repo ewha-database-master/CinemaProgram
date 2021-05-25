@@ -9,11 +9,12 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 public class Controller {
+    Model model = new Model();
     @FXML
     Button genre, menu;
 
     @FXML
-    private void genre(ActionEvent event) {
+    private void goGenre(ActionEvent event) {
         Stage stage = (Stage)genre.getScene().getWindow();
         try {
             Parent next = FXMLLoader.load(getClass().getResource("genre.fxml"));
@@ -23,17 +24,22 @@ public class Controller {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    };
+    }
 
     @FXML
-    private void longTime(ActionEvent event) {
-        // 모델에서 쿼리 수행
-    };
+    private void genre(ActionEvent event) {
+        model.genre_sql(((Button)event.getSource()).getText());
+    }
 
     @FXML
-    private void shortTime(ActionEvent event) {
-        // 마찬가지
-    };
+    private void commercial(ActionEvent event) {
+        model.category_sql("상업");
+    }
+
+    @FXML
+    private void independent(ActionEvent event) {
+        model.category_sql("독립");
+    }
 
     @FXML
     private void goMenu(ActionEvent event) {
@@ -46,5 +52,5 @@ public class Controller {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    };
+    }
 }
