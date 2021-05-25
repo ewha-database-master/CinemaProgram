@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="10.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="영화제 별로 보기">
+                     <font>
+                        <Font name="Malgun Gothic" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="10.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="400.0" text="부산국제영화제">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" text="골든 글로브">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" text="미국 아카데미">
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" text="세자르 영화제">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" text="베니스 국제 영화제">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" text="칸 영화제">
+                           <font>
+                              <Font name="LG PC" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

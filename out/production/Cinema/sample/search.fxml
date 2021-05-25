@@ -9,13 +9,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: gray;">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="제목">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00으로 검색하기">
                      <font>
                         <Font name="LG PC" size="36.0" />
                      </font>
@@ -25,13 +25,12 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
-            <Text fx:id ="result" strokeType="OUTSIDE" strokeWidth="0.0" text="1.chart 2.category" />
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="400.0" style="-fx-border-color: gray;">
                <VBox.margin>
                   <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="사용자 입력">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00 이름">
                      <font>
                         <Font name="LG PC" size="19.0" />
                      </font>
@@ -44,9 +43,16 @@
                         <Insets />
                      </HBox.margin>
                   </TextField>
-                  <Button mnemonicParsing="false" text="Enter" onAction="#textchange" />
                </children>
             </HBox>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="500.0" text=" 검색하기">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="LG PC" size="18.0" />
+               </font>
+            </Button>
          </children>
       </VBox>
    </children>
