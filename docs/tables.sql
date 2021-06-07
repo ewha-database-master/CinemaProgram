@@ -52,7 +52,7 @@ create table db2021_star (
   nickname varchar(20) not null,
   primary key (id),
   foreign key (movie_id) references db2021_movie(id),
-  foreign key (user_id) references db2021_user(id)
+  foreign key (nickname) references db2021_user(id)
 );
 
 create table db2021_like (
