@@ -6,11 +6,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Controller {
+    String nickname;
+
+    @FXML
+    Text showNickname;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+        showNickname.setText(nickname);
+    }
     @FXML
     Button menu;
+
     @FXML
     private void goMenu(ActionEvent event) {
         Stage stage = (Stage)menu.getScene().getWindow();

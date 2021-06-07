@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<StackPane fx:controller="login.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.Controller">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: gray;">
+            <HBox alignment="CENTER" prefHeight="236.0" prefWidth="400.0" style="-fx-border-color: gray;">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="롯데베시네마">
                      <font>
@@ -28,7 +23,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="300.0" prefWidth="70.0" style="-fx-border-color: gray;">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="롯데베시네마에 오신 것을 환영합니다 아이디를 입력해주세요.">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="닉네임을 입력해주세요.">
                      <font>
                         <Font name="LG PC" size="19.0" />
                      </font>
@@ -43,7 +38,7 @@
                   <Insets bottom="40.0" left="20.0" right="20.0" />
                </VBox.margin>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="👉">
                      <font>
                         <Font name="LG PC" size="19.0" />
                      </font>
@@ -51,21 +46,22 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Text>
-                  <TextField prefHeight="25.0" prefWidth="300.0">
+                  <TextField fx:id="idField" prefHeight="25.0" prefWidth="300.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </TextField>
                </children>
             </HBox>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="480.0" text="클릭하여 롯데베시네마 접속!">
-               <VBox.margin>
-                  <Insets left="20.0" right="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font name="LG PC" size="22.0" />
-               </font>
-            </Button>
+            <Pane prefHeight="250.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="enter" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="4.0" mnemonicParsing="false" onAction="#idEnter" prefHeight="40.0" prefWidth="100.0" text="enter">
+                     <font>
+                        <Font name="LG PC" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </children>
       </VBox>
    </children>

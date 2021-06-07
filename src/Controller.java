@@ -53,7 +53,7 @@ public class Controller {
     private void goLikes(ActionEvent event) {
         Stage stage = (Stage)likeMovieButton.getScene().getWindow();
         try {
-            Parent next = FXMLLoader.load(getClass().getResource("./like/like.fxml"));
+            Parent next = FXMLLoader.load(getClass().getResource("./login/login.fxml"));
             Scene sc = new Scene(next);
             stage.setScene(sc);
             stage.show();

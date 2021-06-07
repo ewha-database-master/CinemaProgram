@@ -4,15 +4,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:controller="like.Controller" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="like.Controller">
    <children>
       <Pane prefHeight="60.0" prefWidth="400.0">
          <children>
-            <Text layoutX="152.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="나의 명작">
+            <Text layoutX="152.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="님의 명작">
                <font>
                   <Font name="LG PC" size="29.0" />
                </font>
             </Text>
+            <Text fx:id="showNickname" layoutX="57.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.10937690734863" />
          </children>
       </Pane>
       <ScrollPane prefHeight="281.0" prefWidth="400.0">
