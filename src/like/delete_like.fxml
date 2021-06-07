@@ -40,7 +40,7 @@
                                 <Font name="LG PC" size="23.0" />
                             </font>
                         </Text>
-                        <TextField fx:id="movie_name" prefWidth="250.0" />
+                        <TextField fx:id="movie_id" prefWidth="250.0" />
                     </children>
                 </HBox>
                 <Button mnemonicParsing="false" onAction="#delete_like" text="명작 삭제하기">

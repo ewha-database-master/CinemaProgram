@@ -5,15 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="like.Controller">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="like.Controller">
    <children>
-      <Pane prefHeight="60.0" prefWidth="400.0">
+      <Pane prefHeight="74.0" prefWidth="400.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="." fx:id="showNickname"/>
-            <Text layoutX="152.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="나의 명작">
+            <Text fx:id="showNickname" layoutX="196.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." textAlignment="CENTER">
                <font>
                   <Font name="LG PC" size="29.0" />
+               </font></Text>
+            <Text layoutX="316.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="님의 명작" wrappingWidth="166.95001983642578">
+               <font>
+                  <Font name="LG PC" size="21.0" />
                </font>
             </Text>
          </children>
