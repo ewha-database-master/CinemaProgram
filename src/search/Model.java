@@ -6,11 +6,11 @@ public class Model {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://database-master.cjg477cwca9i.ap-northeast-2.rds.amazonaws.com";
 
-    static final String USER = "admin";
-    static final String PASS = "ewhacyber19";
+    static final String USER = "DB2021Team04";
+    static final String PASS = "DB2021Team04";
 
     public void searchDirector(String value) {
-        String query = "SELECT * FROM db2021_movie WHERE director = ?";
+        String query = "SELECT * FROM DB2021_MOVIE WHERE director = ?";
 
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -18,7 +18,7 @@ public class Model {
             PreparedStatement pStmt = conn.prepareStatement(query);
 
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             ResultSet rs = pStmt.executeQuery();
 
@@ -48,7 +48,7 @@ public class Model {
     }
 
     public void searchTitle(String value) {
-        String query = "SELECT * FROM db2021_movie WHERE title = ?";
+        String query = "SELECT * FROM DB2021_MOVIE WHERE title = ?";
 
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -56,7 +56,7 @@ public class Model {
             PreparedStatement pStmt = conn.prepareStatement(query);
 
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             ResultSet rs = pStmt.executeQuery();
 

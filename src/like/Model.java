@@ -11,7 +11,7 @@ public class Model {
 
 
     public void insert(String value, String movie_name) {
-        String query = "INSERT INTO db2021_like(user_nickname, movie_id) value (?,(select id from db2021_movie where title=?))";
+        String query = "INSERT INTO DB2021_LIKE(user_nickname, movie_id) value (?,(select id from DB2021_MOVIE where title=?))";
 
         try (
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -21,7 +21,7 @@ public class Model {
         ) {
             //System.out.println(value);
 
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             pStmt.setString(2, movie_name);
             pStmt.executeUpdate();
@@ -36,7 +36,7 @@ public class Model {
     }
 
     public void delete(String value, String movie_id) {
-        String query = "DELETE FROM DB2021_like where user_nickname=? and movie_id=(select id from db2021_movie where title=?)";
+        String query = "DELETE FROM DB2021_LIKE where user_nickname=? and movie_id=(select id from DB2021_MOVIE where title=?)";
 
         try (
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -44,7 +44,7 @@ public class Model {
                 PreparedStatement pStmt = conn.prepareStatement(query);
 
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             pStmt.setString(2, movie_id);
             pStmt.executeUpdate();
@@ -57,7 +57,7 @@ public class Model {
         }
     }
     public void select(String value) {
-        String query = "SELECT user_nickname,movie_id,title FROM db2021_like INNER JOIN db2021_movie on db2021_like.movie_id=db2021_movie.id where user_nickname=?";
+        String query = "SELECT user_nickname,movie_id,title FROM DB2021_LIKE INNER JOIN DB2021_MOVIE on DB2021_LIKE.movie_id=DB2021_MOVIE.id where user_nickname=?";
         //String for_movie_name = "SELECT * FROM db2021_movie where id=?";
 
         try (
@@ -66,7 +66,7 @@ public class Model {
                 PreparedStatement pStmt = conn.prepareStatement(query);
 
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             ResultSet rs = pStmt.executeQuery();
 
@@ -77,7 +77,7 @@ public class Model {
             }
             else{
                 System.out.print("\""+value+"\"");
-                System.out.println("님의 '나의 명작' 결과입니다.");
+                System.out.println("님의 나의 명작 결과입니다.");
                 do {
                     String user = rs.getString(1);
                     String movie_id = rs.getString(2);

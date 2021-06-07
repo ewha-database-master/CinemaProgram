@@ -10,16 +10,16 @@ public class Model {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://database-master.cjg477cwca9i.ap-northeast-2.rds.amazonaws.com";
 
-    static final String USER = "admin";
-    static final String PASS = "ewhacyber19";
+    static final String USER = "DB2021Team04";
+    static final String PASS = "DB2021Team04";
 
     public void category_sql(String value){
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();
-            PreparedStatement pStmt = conn.prepareStatement("select * from db2021_movie where movie_type=?");
+            PreparedStatement pStmt = conn.prepareStatement("select * from DB2021_MOVIE where movie_type=?");
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, value);
             ResultSet rs = pStmt.executeQuery();
             System.out.println("\n--------------------------------------------");
@@ -45,9 +45,9 @@ public class Model {
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();
-            PreparedStatement pStmt = conn.prepareStatement("select * from db2021_movie where genre = ?");
+            PreparedStatement pStmt = conn.prepareStatement("select * from DB2021_MOVIE where genre = ?");
         ) {
-            stmt.executeQuery("use cinema");
+            stmt.executeQuery("use DB2021Team04");
             pStmt.setString(1, genre);
             ResultSet rs = pStmt.executeQuery();
             System.out.println("----------------------------");

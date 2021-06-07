@@ -15,12 +15,12 @@ public class Model {
     static final String PASS = "DB2021Team04";
 
     public void readDiscountInfo() {
-        String str = "select title, discount_start, discount_end from db2021_movie";
+        String str = "select title, discount_start, discount_end from DB2021_MOVIE";
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();
             ) {
-            stmt.executeUpdate("use cinema");
+            stmt.executeUpdate("use DB2021Team04");
             ResultSet rs = stmt.executeQuery(str);
             System.out.println("\n--------------------------------------------");
             System.out.println("할인 정보 ~ >< SECRET!");
