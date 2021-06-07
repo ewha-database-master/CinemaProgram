@@ -17,17 +17,36 @@ public class Model {
                 Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 Statement stmt = conn.createStatement();
                 PreparedStatement pStmt = conn.prepareStatement(query);
+                PreparedStatement pStmt2 = conn.prepareStatement("update DB2021_MOVIE set likecnt = likecnt+1 where title = ?");
 
         ) {
-            //System.out.println(value);
+            try {
+                stmt.executeQuery("use DB2021Team04");
+                conn.setAutoCommit(false);
 
-            stmt.executeQuery("use DB2021Team04");
-            pStmt.setString(1, value);
-            pStmt.setString(2, movie_name);
-            pStmt.executeUpdate();
+                pStmt.setString(1, value);
+                pStmt.setString(2, movie_name);
+                pStmt.executeUpdate();
 
-            System.out.println("나의 명작 추가가 완료되었습니다.\n");
-            System.out.println("---------------------------------------------------------------\n");
+                pStmt2.setString(1, movie_name);
+                pStmt2.executeUpdate();
+
+                System.out.println("나의 명작 추가가 완료되었습니다.\n");
+                System.out.println("---------------------------------------------------------------\n");
+                conn.commit();
+            } catch (SQLException se) {
+                se.printStackTrace();
+                System.out.println("Rolling back data here...");
+                try {
+                    if(conn != null)
+                        conn.rollback();
+                } catch(SQLException se2) {
+                    se2.printStackTrace();;
+                }
+                conn.setAutoCommit(true);
+
+            }
+
 
         } catch (SQLException se) {
             System.out.println("error");
