@@ -9,7 +9,7 @@
     <children>
         <Pane prefHeight="60.0" prefWidth="400.0">
             <children>
-            <Text fx:id="myNickname" fill="#d8d8d8" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+                <Text fx:id="myNickname" fill="#d8d8d8" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
                 <Text layoutX="110.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="나의 명작 삭제하기">
                     <font>
                         <Font name="LG PC" size="29.0" />

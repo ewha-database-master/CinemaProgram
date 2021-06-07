@@ -15,12 +15,12 @@ public class Model { // disocunt.Model
 
     // 현재 할인하는 영화를 콘솔에 찍어주는 메서드.
     public void getThisMonthDiscount() {
-        String str = "select * from db2021_movie_view";
+        String str = "select * from DB2021_MOVIE_VIEW";
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();
             ) {
-            stmt.executeUpdate("use cinema");
+            stmt.executeUpdate("use DB2021Team04");
             ResultSet rs = stmt.executeQuery(str);
             System.out.println("---------------------------------");
             System.out.println("\t제목     감독");
