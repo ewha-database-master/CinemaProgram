@@ -11,7 +11,9 @@ import javafx.stage.Stage;
 
 /**
  * <p>watchagain.Controller는 메인창에서 [영화제 다시보기]창으로 이동했을 때의 세부화면 이동과 메서드를 관리하는 컨트롤러입니다.</p>
- * <p></p>
+ * <p>watchagain.fxml에서 세부화면으로 이동하는 메서드 byFestival(), nowShowing(), byAward()와,
+ * 각 세부 화면에서 기능을 수행하는 메서드 searchByFestival(), awardType(), goMenu()가 정의되어 있습니다.
+ *  * 해당 컨트롤러의 메서드 내에서 불러오는 함수는 watchagain.Model에 정의되어 있습니다.</p>
  */
 public class Controller {
     /**
