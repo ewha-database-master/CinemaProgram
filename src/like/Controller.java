@@ -49,8 +49,13 @@ public class Controller {
     private void goDelete(ActionEvent event){
         Stage stage = (Stage)((Button)event.getSource()).getScene().getWindow();
         try {
-            Parent next = FXMLLoader.load(getClass().getResource("delete_like.fxml"));
+            String mynickName = showNickname.getText();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("delete_like.fxml"));
+            Parent next = (Parent) loader.load();
             Scene sc = new Scene(next);
+            like.likeController likelikeController = loader.getController();
+            likelikeController.ssetNickname(mynickName);
             stage.setScene(sc);
             stage.show();
         } catch (Exception e) {
