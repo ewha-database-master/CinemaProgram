@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="discount.Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="400.0">
          <children>
-            <Text layoutX="175.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="할인영화 💜" wrappingWidth="125.01174545288086">
+            <Text layoutX="120.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6월 할인영화 💜" wrappingWidth="219.0117530822754">
                <font>
                   <Font name="LG PC" size="28.0" />
                </font>
             </Text>
-            <Text fx:id="month" layoutX="112.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="54.01173782348633">
+            <Text fx:id="month" layoutX="62.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="콘솔을 확인하세요!" textAlignment="CENTER" wrappingWidth="283.01172256469727">
                <font>
                   <Font name="LG PC" size="28.0" />
                </font>
             </Text>
+            <Button layoutX="178.0" layoutY="273.0" mnemonicParsing="false" onAction="#goMenu" text="메인" />
+            <Button layoutX="313.0" layoutY="356.0" mnemonicParsing="false" onAction="#goClerk" text="staff only" />
          </children>
       </Pane>
    </children>

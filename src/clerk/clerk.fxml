@@ -13,7 +13,7 @@
                   <Font name="LG PC" size="20.0" />
                </font>
             </Text>
-            <PasswordField layoutX="93.0" layoutY="178.0" />
+            <PasswordField fx:id="clerkPwd" layoutX="93.0" layoutY="178.0" />
             <Text layoutX="122.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="직원용 메뉴입니다." wrappingWidth="139.10940742492676">
                <font>
                   <Font name="LG PC" size="20.0" />

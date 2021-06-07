@@ -26,11 +26,10 @@ public class Controller {
     private void goOnlyClerkInfo(ActionEvent event) {
         Stage stage = (Stage)((Button)event.getSource()).getScene().getWindow();
         try {
+            System.out.println(clerkPwd.getText());
             if(isClerk(clerkPwd.getText())) {
-                Parent next = FXMLLoader.load(getClass().getResource("clerkDiscountInfo.fxml"));
-                Scene sc = new Scene(next);
-                stage.setScene(sc);
-                stage.show();
+                Model model = new Model();
+                model.readDiscountInfo();
             }
             else {
                 result.setText("비밀번호가 올바르지 않습니다.");

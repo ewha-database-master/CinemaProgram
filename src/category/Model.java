@@ -2,7 +2,6 @@ package category;
 
 import java.sql.*;
 
-import com.mysql.cj.x.protobuf.MysqlxPrepare;
 
 public class Model {
     //실질적인 기능을 하는 부분 (함수 정의 등)
