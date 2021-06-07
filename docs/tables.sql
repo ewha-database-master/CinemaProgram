@@ -49,7 +49,7 @@ create table db2021_star (
   movie_id int not null,
   star int not null,
   review varchar(50) not null,
-  user_id varchar(20) not null,
+  nickname varchar(20) not null,
   primary key (id),
   foreign key (movie_id) references db2021_movie(id),
   foreign key (user_id) references db2021_user(id)
