@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="discount.Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Text layoutX="175.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="할인영화 💜" wrappingWidth="125.01174545288086">
+               <font>
+                  <Font name="LG PC" size="28.0" />
+               </font>
+            </Text>
+            <Text fx:id="month" layoutX="112.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="54.01173782348633">
+               <font>
+                  <Font name="LG PC" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

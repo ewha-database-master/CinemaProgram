@@ -64,6 +64,14 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </Button>
+            <Button fx:id="awardButton1" layoutX="60.0" layoutY="270.0" mnemonicParsing="false" onAction="#goDiscount" prefHeight="40.0" prefWidth="300.0" text="할인 영화" textAlignment="CENTER">
+               <font>
+                  <Font name="LG PC" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
          </children>
          <opaqueInsets>
             <Insets />

@@ -74,4 +74,17 @@ public class Controller {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void goDiscount(ActionEvent event) {
+        Stage stage = (Stage)((Button)event.getSource()).getScene().getWindow();
+        try {
+            Parent next = FXMLLoader.load(getClass().getResource("./discount/discount.fxml"));
+            Scene sc = new Scene(next);
+            stage.setScene(sc);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clerk.Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Text layoutX="104.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호를 입력해주세요" wrappingWidth="222.1093921661377">
+               <font>
+                  <Font name="LG PC" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="93.0" layoutY="178.0" />
+            <Text layoutX="122.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="직원용 메뉴입니다." wrappingWidth="139.10940742492676">
+               <font>
+                  <Font name="LG PC" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="160.0" layoutY="278.0" mnemonicParsing="false" onAction="#goBack" text="돌아가기" />
+            <Button layoutX="264.0" layoutY="178.0" mnemonicParsing="false" onAction="#goOnlyClerkInfo" text="enter" />
+            <Text fx:id="result" layoutX="188.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
