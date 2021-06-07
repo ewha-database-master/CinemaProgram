@@ -6,13 +6,14 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 /**
  * clerk.Model은 직원용 메뉴인 "할인 정보 조회"를 담당하는 함수를 정의하고 있습니다.
  * (여기서 정의된 함수는 clerk.Controller에서 사용됩니다)
  */
 public class Model {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://database-master.cjg477cwca9i.ap-northeast-2.rds.amazonaws.com";
+    static final String DB_URL = "jdbc:mysql://localhost:3306";
 
     static final String USER = "DB2021Team04";
     static final String PASS = "DB2021Team04";
