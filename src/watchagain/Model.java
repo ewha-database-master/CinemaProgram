@@ -1,11 +1,18 @@
 package watchagain;
 
 import java.sql.*;
-
+/**
+ * watchagain.Model은 "영화제 다시보기" 메뉴에서 영화제별, 수상부문별로 고객이 원하는 정보를 선택받아 출력해주는 함수를 정의하고 있습니다.
+ * (여기서 정의된 함수는 watchagain.Controller에서 사용됩니다)
+ */
 public class Model {
     static final String DB_URL = "jdbc:mysql://database-master.cjg477cwca9i.ap-northeast-2.rds.amazonaws.com";
     static final String USER = "DB2021Team04";
     static final String PASS = "DB2021Team04";
+
+    /**
+     * 영화제별로 보기
+     */
     public void searchByFestival(String festival) {
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);

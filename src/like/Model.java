@@ -2,6 +2,10 @@ package like;
 
 import java.sql.*;
 
+/**
+ * like.Model은 고객별로 "나의 명작"을 insert/delete하는 기능을 제공하는 함수를 정의하고 있습니다.
+ * (여기서 정의된 함수는 like.Controller에서 사용됩니다)
+ */
 public class Model {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://database-master.cjg477cwca9i.ap-northeast-2.rds.amazonaws.com";
