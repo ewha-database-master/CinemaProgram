@@ -63,4 +63,4 @@ create table db2021_like (
   foreign key (user_id) references db2021_user(id),
   foreign key (movie_id) references db2021_movie(id)
 );
-
+--dfjkdfjkdf
