@@ -9,19 +9,27 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+/**
+ * <p>chart.Controller는 [메인창- 명작 차트] 창으로 이동했을 때의 세부화면 이동과 메서드를 관리하는 컨트롤러입니다.</p>
+ * <p>모든 영화차트를 정렬해서 사용자에게 보여줍니다.</p>
+ */
 public class Controller {
 
     private Model model = new Model();
     @FXML
     Button menu;
 
-    // Model에서 받아온 SELECT 결과들 콘솔에 출력
-    // 그냥 model 함수 자체가 print 작업해주므로 함수 호출만
+    /**
+     * Model에서 가나다순,개봉순으로 차트를 정렬해 보여주는 메서드 printChart()
+     */
     @FXML
     private void printChart(ActionEvent event) {
         model.sort_sql(((Button)event.getSource()).getText());
     }
 
+    /**
+     * [메인메뉴] 창으로 돌아가는 메서드 goMenu()
+     */
     @FXML
     private void goMenu(ActionEvent event) {
         Stage stage = (Stage)menu.getScene().getWindow();
