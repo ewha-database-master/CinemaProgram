@@ -69,6 +69,7 @@ create table db2021_star (
 );
 
 create table db2021_like (
+
                              id int not null auto_increment,
                              user_nickname varchar(20) not null,
                              movie_id int not null,
